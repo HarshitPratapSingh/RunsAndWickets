@@ -6,9 +6,9 @@ import numpy as np
 base= os.getcwd()
 
 Models_DF = pd.DataFrame({"Models":["Linear Regression","Huber Linear Model",
-"Decision Tree", "Extra Tree Random Forest", "Random Forest", "Support Vector Regressor",
+"Decision Tree", "Random Forest", "Support Vector Regressor",
 "Xtreme Gradient Boosting"],
-"Keys":["LM", "HLM", "DTR", "ERF", "RF", "SVR", "XGB"]})
+"Keys":["LM", "HLM", "DTR", "RF", "SVR", "XGB"]})
 
 st.markdown('''<meta charset="UTF-8"><center><h1>&#127951; Cricket Predictor &#127951;</h1></center>''', unsafe_allow_html=True)
 
