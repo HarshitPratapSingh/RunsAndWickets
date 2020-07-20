@@ -102,7 +102,7 @@ if Predict_Btn:
     st.success('Hurray you have predicted the results')
 
 
-st.markdown("<br><hr>  &#128512; &#128151;", unsafe_allow_html=True)
+st.markdown("<br><hr style=\"height:10px\">", unsafe_allow_html=True)
 st.header("Thank you for using my ML model I hope you liked it")
 st.markdown(":smile: :smile: :smile: :smile: :smile:")
 st.markdown("Made with :heart: By Harshit Pratap Singh \n")
