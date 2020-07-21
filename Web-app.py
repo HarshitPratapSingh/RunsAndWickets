@@ -88,9 +88,9 @@ if Runs_radio == "Runs":
 
     if model_suffix == "XGB":
         # Fix for XGB model
-        dat_for_pred = [[R_50S, R_M, R_I, R_Y, R_SO_Y, R_HS, R_100S, R_AS, R_CO, R_SO_N]]
+        dat_for_Pred = [[R_50S, R_M, R_I, R_Y, R_SO_Y, R_HS, R_100S, R_AS, R_CO, R_SO_N]]
     else:
-        dat_for_pred = [[R_Y, R_I, R_M, R_50S, R_HS, R_100S, R_AS, R_CO, R_SO_Y, R_SO_N]]
+        dat_for_Pred = [[R_Y, R_I, R_M, R_50S, R_HS, R_100S, R_AS, R_CO, R_SO_Y, R_SO_N]]
 
 
 Predict_Btn = st.button("Click this Button for predicting the value")
