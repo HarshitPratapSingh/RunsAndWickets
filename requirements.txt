@@ -3,4 +3,3 @@ streamlit
 pandas
 scikit_learn==0.22.2.post1
 joblib
-xgboost==0.90
