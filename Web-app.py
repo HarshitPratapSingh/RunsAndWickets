@@ -6,9 +6,8 @@ import numpy as np
 base= os.getcwd()
 
 Models_DF = pd.DataFrame({"Models":["Linear Regression","Huber Linear Model",
-"Decision Tree", "Random Forest", "Support Vector Regressor",
-"Xtreme Gradient Boosting"],
-"Keys":["LM", "HLM", "DTR", "RF", "SVR", "XGB"]})
+"Decision Tree", "Random Forest", "Support Vector Regressor"],
+"Keys":["LM", "HLM", "DTR", "RF", "SVR"]})
 
 st.markdown('''<meta charset="UTF-8"><center><h1>&#127951; Cricket Predictor &#127951;</h1></center>''', unsafe_allow_html=True)
 
@@ -86,11 +85,7 @@ if Runs_radio == "Runs":
         R_SO_Y = 0
         R_SO_N = 1
 
-    if model_suffix == "XGB":
-        # Fix for XGB model
-        dat_for_Pred = [[R_50S, R_M, R_I, R_Y, R_SO_Y, R_HS, R_100S, R_AS, R_CO, R_SO_N]]
-    else:
-        dat_for_Pred = [[R_Y, R_I, R_M, R_50S, R_HS, R_100S, R_AS, R_CO, R_SO_Y, R_SO_N]]
+    dat_for_Pred = [[R_Y, R_I, R_M, R_50S, R_HS, R_100S, R_AS, R_CO, R_SO_Y, R_SO_N]]
 
 
 Predict_Btn = st.button("Click this Button for predicting the value")
